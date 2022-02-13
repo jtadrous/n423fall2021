@@ -1,0 +1,112 @@
+.flashcards {
+  width: 100%;
+  max-width: 1600px;
+  height: auto !important;
+  min-height: calc(100vh - 155px);
+  padding: 155px 0 100px 0;
+  background-color: white;
+  color: white;
+
+  .myRow {
+    margin-top: -730px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 70px;
+
+    h1 {
+      font-family: Segoe-Print-Bold;
+    }
+
+    div {
+      display: flex;
+      justify-content: space-between;
+
+      button {
+        background-color: white;
+        border: none;
+        color: black;
+        border-radius: 50px;
+        max-height: 50px;
+        padding: 0 30px;
+        font-weight: bold;
+      }
+
+      p {
+        font-family: Segoe-UI-Bold;
+        text-align: right;
+        font-size: 26px;
+        max-width: 500px;
+      }
+    }
+  }
+
+  .allCards {
+    color: black;
+
+    .card {
+      margin: 20px 70px;
+      display: flex;
+      justify-content: space-between;
+      font-family: Segoe-UI-Bold;
+      border: solid 2px $site-yellow;
+      box-shadow: rgb(0, 0, 0, 0.2) 0px 10px 20px;
+
+      .square {
+        padding: 30px;
+        p {
+          font-size: 24px;
+        }
+      }
+
+      .edit,
+      .delete {
+        border: none;
+        border-radius: 30px;
+        padding: 15px 30px;
+        color: white;
+        float: right;
+        margin: 20px;
+      }
+
+      .edit {
+        background-color: $site-purple;
+      }
+
+      .delete {
+        background-color: black;
+      }
+    }
+  }
+
+  .data {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-family: Segoe-Print-Bold;
+    font-size: 30px;
+    background-color: $site-purple;
+    padding: 40px 0;
+    margin-top: 50px;
+    margin-bottom: -100px;
+    height: 200px;
+    border-bottom: solid 1px white;
+
+    #scrollTop {
+      cursor: pointer;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .flashcards {
+    .myRow {
+      div {
+        flex-direction: column;
+
+        img {
+          padding-top: 20px;
+        }
+      }
+    }
+  }
+}

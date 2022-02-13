@@ -1,0 +1,136 @@
+.tutorials {
+  width: 100%;
+  max-width: 1600px;
+  height: auto !important;
+  min-height: calc(100vh - 155px);
+  padding-top: 155px;
+  background-color: white;
+
+  .topRow {
+    margin-top: -730px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 70px;
+
+    h2 {
+      font-family: Segoe-Print-Bold;
+      color: white;
+    }
+
+    div {
+      display: flex;
+      justify-content: space-between;
+
+      img {
+        max-width: 300px;
+        max-height: 300px;
+        border-radius: 30px;
+        box-shadow: rgb(0, 0, 0, 0.2) 0px 10px 20px;
+        margin-top: -20px;
+      }
+
+      p {
+        font-family: Segoe-UI-Bold;
+        font-size: 26px;
+        max-width: 500px;
+        color: white;
+      }
+    }
+  }
+
+  .videos {
+    margin: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    div {
+      padding: 20px;
+
+      iframe {
+        width: 500px;
+        height: 300px;
+      }
+
+      h3 {
+        font-family: Segoe-Print-Bold;
+        padding: 10px;
+      }
+
+      p {
+        font-family: Segoe-UI-Bold-Italic;
+      }
+    }
+  }
+
+  .listen {
+    background-color: $site-light-yellow;
+    padding: 50px 70px 80px 70px;
+    margin-bottom: -50px;
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      font-family: Segoe-Print-Bold;
+      padding-bottom: 20px;
+    }
+
+    .audio {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      div {
+        width: 50%;
+        padding-bottom: 20px;
+
+        audio {
+          width: 70%;
+        }
+
+        p {
+          font-family: Segoe-UI-Bold;
+          padding-left: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .tutorials {
+    .topRow {
+      div {
+        flex-direction: column;
+
+        img {
+          padding-top: 20px;
+        }
+      }
+    }
+
+    .videos {
+      div {
+        iframe {
+          width: 300px;
+          height: 150px;
+        }
+      }
+    }
+
+    .listen {
+      .audio {
+        flex-direction: column;
+
+        div {
+          width: 100%;
+
+          audio {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

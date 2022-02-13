@@ -1,0 +1,142 @@
+.about {
+  width: 100%;
+  max-width: 1600px;
+  height: auto !important;
+  min-height: calc(100vh - 155px);
+  padding-top: 155px;
+  background-color: white;
+  margin: 0 auto;
+
+  .welcome {
+    margin: -730px 70px 0 70px;
+    float: right;
+    background-color: white;
+    border-radius: 35px;
+    max-width: 575px;
+    padding: 50px;
+    text-align: right;
+    box-shadow: rgb(0, 0, 0, 0.2) 0px 10px 20px;
+
+    h2 {
+      font-family: Segoe-Print-Bold;
+      font-size: 48px;
+      letter-spacing: 1px;
+    }
+
+    p,
+    h3 {
+      font-family: Segoe-UI-Bold;
+      font-size: 26px;
+    }
+
+    h3 {
+      padding-top: 40px;
+      max-width: 500px;
+      margin: 0 auto;
+      line-height: 45px;
+    }
+  }
+
+  .people {
+    padding: 0 70px 70px 70px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .person {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      margin-bottom: 50px;
+
+      img {
+        width: 300px;
+        height: 300px;
+        border-radius: 200px;
+        padding-bottom: 20px;
+      }
+
+      h4 {
+        font-family: Segoe-UI-Bold;
+      }
+
+      .tagline {
+        font-family: Segoe-Print-Bold;
+        width: 300px;
+      }
+
+      .emailOf {
+        font-family: Segoe-UI-Bold;
+      }
+    }
+  }
+
+  .message {
+    background-color: $site-yellow;
+    padding: 70px 70px 100px 70px;
+    margin-bottom: -50px;
+    display: flex;
+    flex-direction: column;
+    font-family: Segoe-UI-Bold;
+
+    h2 {
+      font-family: Segoe-Print-Bold;
+    }
+
+    .formTop {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding-bottom: 30px;
+
+      div {
+        display: flex;
+        flex-direction: column;
+
+        input {
+          background-color: white;
+          border: none;
+          width: 220px;
+          border-radius: 10px;
+          padding: 15px;
+        }
+      }
+    }
+
+    textarea {
+      background-color: white;
+      border: none;
+      border-radius: 10px;
+      width: 50%;
+    }
+
+    div {
+      button {
+        color: white;
+        background-color: $site-purple;
+        border: none;
+        border-radius: 50px;
+        padding: 15px 30px;
+        margin-top: 30px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .about {
+    .welcome {
+      max-width: 300px;
+      padding: 40px 20px;
+
+      h2 {
+        font-size: 30px;
+      }
+
+      p,
+      h3 {
+        font-size: 16px;
+      }
+    }
+  }
+}

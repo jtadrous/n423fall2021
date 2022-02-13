@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-color: #c1c1c1;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+@font-face {
+  font-family: Segoe-Print-Bold;
+  src: url(fonts/Segoe-Print-Bold.ttf);
+}
+
+@font-face {
+  font-family: Segoe-UI-Bold-Italic;
+  src: url(fonts/Segoe-UI-Bold-Italic.ttf);
+}
+
+@font-face {
+  font-family: Segoe-UI-Bold;
+  src: url(fonts/Segoe-UI-Bold.ttf);
+}
+
+/* bootstrap toast styling */
+.toast {
+  display: none;
+  position: fixed;
+  z-index: 200;
+  margin: 0 auto;
+  top: 20px;
+  left: 0;
+  right: 0;
+  background-color: white;
+}
+
+/* modal styling */
+#modal {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  z-index: 99;
+
+  .bg-click {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+  }
+
+  .callout {
+    width: 600px;
+    height: 400px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 99;
+    top: 100px;
+    margin: 0 auto;
+    border-radius: 40px;
+
+    .topMod {
+      display: flex;
+      justify-content: space-between;
+      font-family: Segoe-UI-Bold;
+
+      .left,
+      .right {
+        padding: 20px;
+
+        input {
+          height: 100px;
+        }
+      }
+    }
+
+    .bot {
+      padding-top: 20px;
+
+      input {
+        border: none;
+        border-radius: 30px;
+        padding: 15px 30px;
+        font-family: Segoe-UI-Bold;
+        margin: 20px;
+      }
+
+      #cancel {
+        background-color: $site-yellow;
+      }
+
+      #submit {
+        background-color: $site-teal;
+        color: white;
+      }
+    }
+  }
+}

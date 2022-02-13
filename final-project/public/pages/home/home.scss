@@ -1,0 +1,193 @@
+.home {
+  width: 100%;
+  max-width: 1600px;
+  height: auto !important;
+  min-height: calc(100vh - 155px);
+  padding-top: 155px;
+  background-color: white;
+  margin: 0 auto;
+
+  .welcome {
+    margin: -730px 0 100px 70px;
+    background-color: white;
+    border-radius: 35px;
+    max-width: 575px;
+    padding: 50px 20px 70px 20px;
+    text-align: center;
+    box-shadow: rgb(0, 0, 0, 0.2) 0px 10px 20px;
+
+    h2 {
+      font-family: Segoe-Print-Bold;
+      font-size: 48px;
+      letter-spacing: 1px;
+    }
+
+    p,
+    h3 {
+      font-family: Segoe-UI-Bold;
+      font-size: 30px;
+    }
+
+    h3 {
+      padding-top: 40px;
+      max-width: 500px;
+      margin: 0 auto;
+      line-height: 45px;
+    }
+  }
+
+  .mission {
+    display: flex;
+
+    .text {
+      width: 60%;
+      padding: 80px;
+
+      h2 {
+        font-family: Segoe-Print-Bold;
+        font-size: 52px;
+        margin-bottom: 50px;
+      }
+
+      p {
+        font-family: Segoe-UI-Bold;
+        font-size: 24px;
+      }
+    }
+
+    .graphic {
+      width: 40%;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+
+      img {
+        width: 400px;
+        height: 400px;
+        align-self: center;
+      }
+    }
+  }
+
+  .info {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: $site-purple;
+    padding: 70px 0 90px 0;
+    text-align: center;
+
+    .cat {
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      color: white;
+
+      img {
+        width: 300px;
+        border-radius: 20px;
+        box-shadow: rgb(0, 0, 0, 0.2) 0px 10px 20px;
+        margin-bottom: 20px;
+        align-self: center;
+      }
+
+      h4 {
+        font-family: Segoe-Print-Bold;
+      }
+
+      p {
+        font-family: Segoe-UI-Bold;
+        padding: 0 35px;
+        line-height: 30px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .home {
+    .welcome {
+      max-width: 450px;
+      padding: 40px 30px;
+      margin-bottom: 175px;
+
+      h2 {
+        font-size: 36px;
+      }
+
+      p,
+      h3 {
+        font-size: 22px;
+      }
+    }
+
+    .mission {
+      .text {
+        p {
+          font-size: 20px;
+        }
+      }
+
+      .graphic {
+        img {
+          width: 300px;
+          height: 300px;
+        }
+      }
+    }
+
+    .info {
+      .cat {
+        img {
+          width: 200px;
+        }
+
+        p {
+          padding: 0 20px;
+          line-height: 25px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .home {
+    .welcome {
+      max-width: 300px;
+      padding: 40px 20px;
+      margin: -730px auto 200px auto;
+
+      h2 {
+        font-size: 30px;
+      }
+
+      p,
+      h3 {
+        font-size: 16px;
+      }
+    }
+
+    .mission {
+      flex-direction: column;
+
+      .text,
+      .graphic {
+        width: 100%;
+        padding: 40px;
+      }
+    }
+
+    .info {
+      flex-direction: column;
+
+      .cat {
+        width: 100%;
+        padding-bottom: 10px;
+
+        p {
+          padding: 0 50px;
+        }
+      }
+    }
+  }
+}

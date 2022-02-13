@@ -1,0 +1,122 @@
+.culture {
+  width: 100%;
+  max-width: 1600px;
+  height: auto !important;
+  min-height: calc(100vh - 155px);
+  padding: 155px 0 70px 0;
+  background-color: white;
+
+  .para {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 70px 50px 70px;
+
+    h2 {
+      font-family: Segoe-Print-Bold;
+      font-size: 45px;
+    }
+
+    div {
+      display: flex;
+      justify-content: space-between;
+
+      img {
+        max-width: 350px;
+        height: auto;
+        border-radius: 30px;
+        box-shadow: rgb(0, 0, 0, 0.2) 0px 10px 20px;
+      }
+
+      p {
+        font-family: Segoe-UI-Bold;
+        width: 60%;
+        font-size: 24px;
+        padding-right: 30px;
+      }
+    }
+  }
+
+  #newOrder {
+    text-align: right;
+    p {
+      padding-right: 0;
+      padding-left: 30px;
+    }
+  }
+
+  #first {
+    margin-bottom: 100px;
+    background-color: $site-yellow;
+    margin-top: -730px;
+  }
+
+  .read {
+    background-color: $site-teal;
+    padding: 50px 70px 80px 70px;
+    margin-bottom: -50px;
+
+    h2 {
+      color: white;
+      font-family: Segoe-Print-Bold;
+    }
+
+    div {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      padding-top: 20px;
+
+      button {
+        background-color: white;
+        border-radius: 30px;
+        border: none;
+        padding: 15px 30px;
+        margin: 10px;
+        font-family: Segoe-UI-Bold;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .culture {
+    .para {
+      div {
+        img {
+          max-width: 250px;
+          max-height: 300px;
+        }
+        p {
+          font-size: 19px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .culture {
+    .para {
+      text-align: center;
+      div {
+        flex-direction: column;
+
+        img {
+          margin: 20px 0;
+          max-width: 450px;
+          max-height: none;
+          align-self: center;
+        }
+
+        p {
+          width: 100%;
+        }
+      }
+    }
+
+    #newOrder {
+      text-align: center;
+    }
+  }
+}

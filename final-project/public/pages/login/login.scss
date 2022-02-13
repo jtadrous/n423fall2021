@@ -1,0 +1,100 @@
+.login {
+  width: 100%;
+  max-width: 1600px;
+  height: auto !important;
+  min-height: calc(100vh - 155px);
+  padding-top: 100px;
+  padding-bottom: 50px;
+  margin-top: -730px;
+  display: flex;
+  justify-content: space-between;
+  background-color: $site-light-yellow;
+
+  .bee {
+    align-self: center;
+    img {
+      max-width: 200px;
+      max-height: 200px;
+      margin-top: -20px;
+    }
+  }
+
+  h1 {
+    font-family: Segoe-Print-Bold;
+    font-size: 30px;
+    letter-spacing: 3px;
+    margin: 0 40px;
+    padding-bottom: 20px;
+  }
+
+  p {
+    font-family: Segoe-UI-Bold;
+  }
+
+  .old-login,
+  .sign-up,
+  .formDiv {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 40px;
+  }
+
+  .sign-up {
+    text-align: right;
+
+    .formDiv {
+      p {
+        font-size: 15px;
+        margin: 0;
+      }
+    }
+  }
+
+  .old-login {
+    .formDiv {
+      #emInput,
+      #passInput {
+        padding: 10px;
+        border-radius: 20px;
+      }
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .inputStyle {
+    background-color: white;
+    border: none;
+    text-align: start;
+    width: 220px;
+    border-radius: 10px;
+  }
+
+  .btns {
+    margin-top: 30px;
+    color: white;
+    background-color: $site-purple;
+    border: none;
+    border-radius: 50px;
+    padding: 15px;
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .login {
+    padding-top: 150px;
+    flex-direction: column;
+
+    .bee {
+      padding-bottom: 50px;
+    }
+
+    .old-login,
+    .sign-up {
+      margin: 0 auto;
+      padding-bottom: 80px;
+    }
+  }
+}

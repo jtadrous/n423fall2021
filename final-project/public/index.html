@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AraBee | Arabic Learning Tool</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="bar">
+        <a href="#/home">
+          <div class="navLogo">
+            <img src="img/bee-logo.png" alt="Graphic of a bee" />
+            <h1>AraBee</h1>
+          </div>
+        </a>
+        <div class="navLinks">
+          <a href="#/home">Home</a>
+          <a href="#/culture">Culture</a>
+          <a href="#/tutorials">Tutorials</a>
+          <a class="hide" href="#/flashcards">Flashcards</a>
+          <a href="#/about">About Us</a>
+          <a class="hide-log" href="#/login">Login</a>
+          <a class="hide" href="#/home" onclick="signOut()">Logout</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="toast" data-autohide="false">
+      <div class="toast-header">
+        <strong class="mr-auto text-primary toast-head">Toast Header</strong>
+        <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">
+          &times;
+        </button>
+      </div>
+      <div class="toast-body">Some text inside the toast body</div>
+    </div>
+
+    <div id="modal">
+      <div class="bg-click"></div>
+      <div class="callout">
+        <div class="topMod">
+          <div class="left">
+            <p>Enter Term</p>
+            <input type="text" id="theTerm" />
+          </div>
+          <div class="right">
+            <p>Enter Definition</p>
+            <input type="text" id="theDef" />
+          </div>
+        </div>
+        <div class="bot">
+          <input type="submit" value="Cancel" id="cancel" />
+          <input
+            type="submit"
+            value="Submit"
+            id="submit"
+            onclick="addYourCard()"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="app"></div>
+
+    <footer>
+      <div class="footLinks">
+        <div class="learn">
+          <p>Learn</p>
+          <a href="#">Culture</a>
+          <a href="#">Tutorials</a>
+        </div>
+        <div class="connect">
+          <p>Connect</p>
+          <a href="#">About Us</a>
+          <a href="#">Login</a>
+          <a href="#">Sign Up</a>
+        </div>
+        <div class="more">
+          <p>More</p>
+          <a href="#">Terms of Use</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+      <div class="copy">
+        <p>©2021 AraBee Ltd</p>
+        <div class="follow">
+          <i class="fa fa-youtube-square"></i>
+          <i class="fa fa-twitter-square"></i>
+          <i class="fa fa-facebook-square"></i>
+          <i class="fa fa-instagram"></i>
+        </div>
+      </div>
+    </footer>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/9.5.0/firebase-app-compat.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/9.5.0/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/9.5.0/firebase-database-compat.js"></script>
+    <script
+      defer
+      src="/__/firebase/9.5.0/firebase-firestore-compat.js"
+    ></script>
+    <script
+      defer
+      src="/__/firebase/9.5.0/firebase-functions-compat.js"
+    ></script>
+    <script
+      defer
+      src="/__/firebase/9.5.0/firebase-messaging-compat.js"
+    ></script>
+    <script defer src="/__/firebase/9.5.0/firebase-storage-compat.js"></script>
+    <script
+      defer
+      src="/__/firebase/9.5.0/firebase-analytics-compat.js"
+    ></script>
+    <script
+      defer
+      src="/__/firebase/9.5.0/firebase-remote-config-compat.js"
+    ></script>
+    <script
+      defer
+      src="/__/firebase/9.5.0/firebase-performance-compat.js"
+    ></script>
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+
+    <!--my scripts-->
+    <script src="lib/jquery-3.6.0.min.js"></script>
+    <script src="app/model.js"></script>
+    <script src="app/app.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
