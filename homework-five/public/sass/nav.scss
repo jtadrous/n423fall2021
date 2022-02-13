@@ -1,0 +1,57 @@
+nav {
+  width: 85%;
+  margin: 0 auto;
+  border-radius: 10px;
+  display: flex;
+  height: 75px;
+  padding: 0 20px;
+  box-shadow: 1px 1px 3px #888888;
+
+  .logo {
+    width: 25%;
+    display: flex;
+    align-items: center;
+
+    h1 {
+      font-size: 30px;
+      padding-left: 30px;
+      padding-top: 20px;
+    }
+  }
+
+  .search {
+    width: 45%;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+
+    input {
+      height: 40px;
+      width: 200px;
+      border: none;
+      border-radius: 30px;
+      background-color: lightgray;
+      padding: 0 20px;
+    }
+
+    i {
+      margin-left: -30px;
+      cursor: pointer;
+    }
+  }
+
+  .links {
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    float: right;
+
+    a {
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: bolder;
+      color: black;
+    }
+  }
+}
