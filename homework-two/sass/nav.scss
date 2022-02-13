@@ -1,0 +1,104 @@
+nav {
+  width: 80%;
+  background-color: #2e2e2e;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center;
+  color: white;
+  height: 180px;
+  padding: 20px;
+
+  .top {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding-bottom: 20px;
+
+    a {
+      text-decoration: none;
+      color: white;
+
+      h1 {
+        width: 20%;
+        padding: 10px 0 0 35px;
+      }
+    }
+
+    .links {
+      width: 60%;
+      display: flex;
+      justify-content: space-evenly;
+      letter-spacing: 1.5px;
+    }
+
+    .sign {
+      width: 20%;
+      display: flex;
+      justify-content: space-evenly;
+    }
+  }
+
+  hr {
+    width: 100%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+  }
+
+  form {
+    display: flex;
+    width: 60%;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px 0;
+
+    label {
+      font-weight: 500;
+      margin: 20px;
+    }
+
+    input,
+    select {
+      background-color: white;
+      border: none;
+      border-radius: 8px;
+      padding: 10px;
+    }
+
+    select {
+      width: 50px;
+    }
+
+    button {
+      margin: 20px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  nav {
+    height: auto;
+
+    .top {
+      flex-direction: column;
+
+      a {
+        h1 {
+          padding: 0;
+        }
+      }
+
+      .sign {
+        margin-top: 20px;
+        width: 90%;
+      }
+    }
+
+    form {
+      flex-direction: column;
+    }
+  }
+}

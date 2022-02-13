@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework Two</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="top">
+        <a href="index.html"><h1>WeatherU</h1></a>
+        <div class="links">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Research</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="sign">
+          <button type="button">Sign Up</button>
+          <button type="button">Login</button>
+        </div>
+      </div>
+      <hr />
+      <form action="#">
+        <label for="userInput"><em>City / Zip</em></label>
+        <input type="text" id="userInput" />
+        <label for="days"><em># of Days</em></label>
+        <select id="days" name="days">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+        <button type="submit" id="submit"><i class="fa fa-search"></i></button>
+      </form>
+    </nav>
+    <div class="placeholder">
+      <h3>Welcome!</h3>
+      <p>Select a city forecast above</p>
+      <img
+        src="images/AdobeStock_271564802.jpeg"
+        alt="Graphic of several skylines"
+      />
+    </div>
+    <div id="city"></div>
+    <div id="home"></div>
+    <footer>
+      <p>©2021 by Julie Tadrous</p>
+      <p>
+        Data curtesy of <a href="https://weatherapi.com/">weatherapi.com</a>
+      </p>
+    </footer>
+    <script src="lib/jquery-3.6.0.min.js"></script>
+    <script src="app/app.js"></script>
+  </body>
+</html>
