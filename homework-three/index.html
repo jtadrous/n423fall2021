@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework Three</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <section class="home">
+      <div class="top">
+        <h1>• STUDENTS •</h1>
+      </div>
+
+      <div class="sides">
+        <form action="#">
+          <h2>Enter Information</h2>
+          <div class="longInput">
+            <label for="fName">First Name:</label><br />
+            <input type="text" id="fName" />
+          </div>
+          <div class="longInput">
+            <label for="lName">Last Name:</label><br />
+            <input type="text" id="lName" />
+          </div>
+          <div class="longInput">
+            <label for="email">Email:</label><br />
+            <input type="email" id="email" />
+          </div>
+          <div class="longInput">
+            <label for="phone">Phone:</label><br />
+            <input type="tel" id="phone" maxlength="11" />
+          </div>
+          <div class="longInput">
+            <label for="age">Age:</label><br />
+            <input type="number" id="age" min="1" />
+          </div>
+          <div class="longInput">
+            <label for="classes"
+              >Classes:<br />
+              (please separate with commas)</label
+            ><br />
+            <textarea
+              name="classes"
+              id="classes"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+          <input type="button" value="Submit" id="submit" />
+        </form>
+
+        <div class="right">
+          <button type="submit" id="show">Show all Students</button>
+          <div id="list"></div>
+        </div>
+      </div>
+    </section>
+
+    <script src="lib/jquery-3.6.0.min.js"></script>
+    <script src="app/app.js"></script>
+  </body>
+</html>
