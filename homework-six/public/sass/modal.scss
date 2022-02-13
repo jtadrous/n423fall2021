@@ -1,0 +1,68 @@
+.modal {
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+
+  .content {
+    background-color: #fefefe;
+    padding: 20px;
+    margin: 10% auto;
+    border: 3px solid #97baa4;
+    border-radius: 10px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+    .top {
+      #close {
+        float: right;
+        font-size: 25px;
+        cursor: pointer;
+      }
+    }
+
+    .bottom {
+      text-align: center;
+      margin: 0 auto;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+
+      .old-login,
+      .sign-up,
+      .formDiv {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 40px;
+      }
+
+      .google {
+        padding: 60px 0;
+      }
+
+      .inputStyle {
+        border: none;
+        border-bottom: 3px solid #97baa4;
+        margin: 25px 0;
+        text-align: start;
+        width: 200px;
+      }
+
+      .btns {
+        background-color: #97baa4;
+        padding: 10px 20px;
+        border-radius: 8px;
+        color: black;
+        cursor: pointer;
+        width: 150px;
+        margin: 0 auto;
+      }
+    }
+  }
+}

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Homework Six</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <i class="fa fa-border fa-headphones" style="font-size: 30px"></i>
+        <h1>MusicU</h1>
+      </div>
+      <div class="search">
+        <input type="text" placeholder="Search albums..." />
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="links">
+        <a id="all" href="#">All</a>
+        <a id="pop" href="#">Pop</a>
+        <a id="indie" href="#">Indie</a>
+        <a id="christian" href="#">Christian</a>
+        <a id="myBtn" href="#">Login</a>
+        <a id="out" href="#" onclick="signOut()">Logout</a>
+      </div>
+    </nav>
+    <div class="wrapper">
+      <h2>Discover</h2>
+      <div class="banner"></div>
+      <div id="playlist"></div>
+    </div>
+
+    <div id="logModal" class="modal">
+      <div class="content">
+        <div class="top">
+          <span id="close"><i class="fa fa-close"></i></span>
+          <h2>Welcome!</h2>
+        </div>
+        <div class="bottom">
+          <div class="old-login">
+            <h4>Login Here</h4>
+            <div class="formDiv">
+              <input
+                type="email"
+                placeholder="Email Address"
+                id="emInput"
+                class="inputStyle"
+              />
+              <input
+                type="password"
+                placeholder="Password"
+                id="passInput"
+                class="inputStyle"
+              />
+              <input
+                type="submit"
+                class="btns"
+                id="log-btn"
+                onclick="login()"
+                value="Login"
+              />
+            </div>
+          </div>
+
+          <div class="google">
+            <h4>Login with Google</h4>
+            <input
+              type="submit"
+              class="btns"
+              id="google-btn"
+              onclick="signInGoogle()"
+              value="Google Login"
+            />
+          </div>
+
+          <div class="sign-up">
+            <h4>New? Sign Up</h4>
+            <div class="formDiv">
+              <input
+                type="text"
+                placeholder="First Name"
+                id="fName"
+                class="inputStyle"
+              />
+              <input
+                type="text"
+                placeholder="Last Name"
+                id="lName"
+                class="inputStyle"
+              />
+              <input
+                type="email"
+                placeholder="Email Address"
+                id="email"
+                class="inputStyle"
+              />
+              <input
+                type="password"
+                placeholder="Password"
+                id="pass"
+                class="inputStyle"
+              />
+              <input
+                type="submit"
+                class="btns"
+                id="sign-btn"
+                onclick="createUser()"
+                value="Sign Up"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="copy">
+        <p>
+          <b>MusicU</b>
+          <br />
+          220 Glassdome St. Austin TX, 73301 &nbsp;&nbsp;&nbsp;&nbsp; © 2021 by
+          Julie Tadrous
+        </p>
+      </div>
+      <div class="our-work">
+        <p><b>&#8594;</b> About</p>
+      </div>
+      <div class="socials">
+        <p><b>&#8594;</b> Socials</p>
+      </div>
+    </footer>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/9.1.2/firebase-app-compat.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/9.1.2/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/9.1.2/firebase-database-compat.js"></script>
+    <script
+      defer
+      src="/__/firebase/9.1.2/firebase-firestore-compat.js"
+    ></script>
+    <script
+      defer
+      src="/__/firebase/9.1.2/firebase-functions-compat.js"
+    ></script>
+    <script
+      defer
+      src="/__/firebase/9.1.2/firebase-messaging-compat.js"
+    ></script>
+    <script defer src="/__/firebase/9.1.2/firebase-storage-compat.js"></script>
+    <script
+      defer
+      src="/__/firebase/9.1.2/firebase-analytics-compat.js"
+    ></script>
+    <script
+      defer
+      src="/__/firebase/9.1.2/firebase-remote-config-compat.js"
+    ></script>
+    <script
+      defer
+      src="/__/firebase/9.1.2/firebase-performance-compat.js"
+    ></script>
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+
+    <script src="lib/jquery-3.6.0.min.js"></script>
+    <script src="app/app.js"></script>
+  </body>
+</html>
