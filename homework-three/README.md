@@ -1,3 +1,3 @@
 ## homework-three
  
-Web4 Link: https://in-info-web4.informatics.iupui.edu/~jtadrous/N423/homework-three/
+Live Link: https://jtadrous.github.io/n423fall2021/homework-three/index.html
